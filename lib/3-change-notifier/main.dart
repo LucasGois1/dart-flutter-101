@@ -3,13 +3,13 @@ import 'package:provider/provider.dart';
 import 'package:state/3-change-notifier/user.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyAppChangeNotifier());
 }
 
 // Utilizando o ChangeNotifier
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyAppChangeNotifier extends StatelessWidget {
+  const MyAppChangeNotifier({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        home: const MyHomePage(title: 'Change Notifier'),
         debugShowCheckedModeBanner: false,
       ),
     );

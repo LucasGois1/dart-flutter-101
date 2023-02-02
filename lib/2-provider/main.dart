@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'user.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MyAppProvider());
 }
 
 // Utilizando nosso proprio provider
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MyAppProvider extends StatelessWidget {
+  const MyAppProvider({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        home: const MyHomePage(title: 'Provider'),
         debugShowCheckedModeBanner: false,
       ),
     );
