@@ -22,12 +22,12 @@ class Promise<T> with Awaitable<T> {
     return this;
   }
 
-  // onFinish(VoidCallback callback) {
-  //   callback();
+  // onFinish(Function(T) callback) {
+  //   callback(_argument);
   // }
 
-  // Awaitable then(T Function(T) promise) {
-  //   argument = promise(argument);
+  // Awaitable<T> then(T Function(T) promise) {
+  //   _argument = promise(_argument);
   //   return this;
   // }
 }
