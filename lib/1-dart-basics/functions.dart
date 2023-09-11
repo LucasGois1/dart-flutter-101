@@ -2,65 +2,74 @@
 
 import 'dart:math';
 
+// Função 'functionExample' simples sem parâmetros ou retorno.
 void functionExample() {}
 
+// Função 'functionExampleWithParams' com parâmetros.
 void functionExampleWithParams(int param1, String param2) {}
 
+// Função 'functionExampleWithOptionalParams' com parâmetros opcionais.
 void functionExampleWithOptionalParams([
   int? param1,
   String? param2,
   bool? param3,
 ]) {
-  // do something
+  // Realiza alguma ação com os parâmetros (pode ser vazio).
 }
 
+// Função 'functionExampleWithNamedParams' com parâmetros nomeados.
 void functionExampleWithNamedParams({
   int? param1,
   String? param2,
   bool? param3,
 }) {
-  // do something
+  // Realiza alguma ação com os parâmetros nomeados (pode ser vazio).
 }
 
+// Função assíncrona 'functionExampleAsync' que retorna um Future<bool>.
 Future<bool> functionExampleAsync() async {
+  // Retorna um Future imediatamente com o valor 'true'.
   return Future.value(true);
 }
 
-// Generator SYNC
+// Gerador síncrono 'counterGenerator' que produz uma sequência de inteiros.
 Iterable<int> counterGenerator(String name) sync* {
   var i = 0;
 
   while (true) {
-    print('[--$name] produzindo $i');
-    yield i;
+    print('[--$name] produzindo $i'); // Imprime o valor produzido.
+    yield i; // Gera o valor.
 
-    i++;
+    i++; // Incrementa o contador.
   }
 }
 
+// Stream assíncrono 'counter' que produz uma sequência de inteiros com um atraso aleatório.
 Stream<int> counter(String name) async* {
   var i = 0;
-  final delay = Duration(seconds: Random().nextInt(30) + 10);
+  final delay = Duration(
+      seconds: Random().nextInt(30) +
+          10); // Gera um atraso aleatório entre 10 e 39 segundos.
 
   while (true) {
-    await Future.delayed(delay);
+    await Future.delayed(delay); // Aguarda o atraso.
 
-    print('[--$name] produzindo $i');
-    yield i;
+    print('[--$name] produzindo $i'); // Imprime o valor produzido.
+    yield i; // Gera o valor.
 
-    i++;
+    i++; // Incrementa o contador.
   }
 }
 
 void main() {
-  // execute 5 contador streams in a separate thread
+  // Executa 3 contadores em uma thread separada.
   final consumer1 = counter('stream1');
   // final consumer2 = counter('stream2');
   // final consumer3 = counter('stream3');
 
-  // listen to all streams
+  // Escuta todos os streams.
   consumer1.listen((event) {
-    print('[consumer1] consumindo $event\n');
+    print('[consumer1] consumindo $event\n'); // Imprime o valor consumido.
   });
   // consumer2.listen((event) => print('[consumer2] consumindo $event\n'));
   // consumer3.listen((event) => print('[consumer3] consumindo $event\n'));
