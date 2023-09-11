@@ -1,16 +1,10 @@
-# state
+# Bem vindo
 
-A new Flutter project.
+## Resumão de Dart & Flutter
 
-## Getting Started
+Tópicos abordados neste repo:
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    - Fundamentos de Dart (Tipos, Null-safety, Controle de fluxos, Operadores Classes, Generics, Async)
+    - Fundamentos de Fluter (Criando seu primeiro app, Estruturas basicas e componentes padrão do Flutter)
+    - Gerenciamento de estado (Stateless, Statefull, InheritedWidget, Streams, Bloc)
+    - Cozy, FeatureFlag, Arquitetura TFA, Dependency Injection (Modular & CompositionRoot)
