@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:state/3-change-notifier/user.dart';
+import '../3-change-notifier/user.dart';
 
 void main() {
   runApp(const MyAppChangeNotifier());
@@ -41,7 +41,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    final UserProvider userProvider = Provider.of(context);
+    final UserProvider userProvider = Provider.of<UserProvider>(context);
 
     return Scaffold(
       appBar: AppBar(

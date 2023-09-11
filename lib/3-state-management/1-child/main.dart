@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:state/1-child/user.dart';
+import '../1-child/user.dart';
 
 void main() {
   runApp(const MyAppChild());

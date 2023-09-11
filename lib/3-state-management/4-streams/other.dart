@@ -1,4 +1,4 @@
-import 'package:state/4-streams/streams.dart';
+import '../4-streams/streams.dart';
 
 void teste() async {
   streamController.add(EventExample('[teste] Ola '));
