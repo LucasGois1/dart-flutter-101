@@ -9,7 +9,7 @@ Tópicos abordados neste repo:
 - Gerenciamento de estado (Stateless, Statefull, InheritedWidget, Streams, Bloc)
 - Cozy, FeatureFlag, Arquitetura TFA, Dependency Injection (Modular & CompositionRoot)
 
-Sobre o Dart
+## Sobre o Dart
 
 - Desenvolvida pela Google: A linguagem Dart foi desenvolvida pela Google e é usada em vários projetos internos, incluindo o framework Flutter. Curiosidade:  Criada inicialmente para substituir o javascript na web!
 
