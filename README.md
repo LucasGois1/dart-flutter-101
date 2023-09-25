@@ -13,8 +13,7 @@ Tópicos abordados neste repo:
 
 - Desenvolvida pela Google: A linguagem Dart foi desenvolvida pela Google e é usada em vários projetos internos, incluindo o framework Flutter. Curiosidade:  Criada inicialmente para substituir o javascript na web!
 
-- Orientada a objetos: Dart é uma linguagem orientada a objetos, o que significa que ela se baseia em objetos e classes para modelar dados e funcionalidades.
-
+- Orientada a objetos: Dart é uma linguagem orientada a objetos, e todos objetos herdam de Object.
 - Tipagem estática opcional: Dart permite a tipagem estática opcional, o que significa que você pode optar por especificar tipos de variáveis, mas também pode usar a tipagem dinâmica.
 
 - Dart é compilada: O código Dart é compilado em código nativo ou JavaScript, tornando-o adequado para o desenvolvimento tanto de aplicativos para dispositivos móveis quanto de aplicativos web. Pode ser compilada em ahead-of-time (AOT) e just-in-time (JIT). Compilação ahead-of-time é quando o código é compilado diretamente para ARM nativo, o que possibilita a performance de uma aplicação nativa. Just-in-time compila o código diretamente no device, com a aplicação em execução, o que permite um retorno em tempo real da alteração e aumenta a velocidade do ciclo de desenvolvimento. Este ponto é chamado de *hot-reload*.
