@@ -36,6 +36,7 @@ abstract class Vehicle {
 // Classe 'Car' implementa a classe 'Vehicle' e usa o mixin 'Honkable'.
 class Car extends Vehicle with Honkable {
   // Propriedades
+
   String model;
   int manufactureYear;
   bool isNew = true;
@@ -115,10 +116,11 @@ void main() {
 
   // Verificando se a instância 'ferrari' é uma instância de 'Car' e 'Honkable'.
   print(ferrari is Car);
+  print(ferrari is Vehicle);
   print(ferrari is Honkable);
 
   // Criando uma lista de carros e filtrando apenas os carros rápidos usando a extensão 'OnlyFastCar'.
-  final cars = [fusca, ferrari];
+  final List<Vehicle> cars = [fusca, ferrari];
   print(cars.fastCars);
 
   // Tentativa de usar a extensão 'fastCars' em uma lista de inteiros (não funciona, pois a extensão se aplica a List<Vehicle>).

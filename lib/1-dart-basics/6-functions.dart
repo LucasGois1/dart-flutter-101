@@ -3,7 +3,7 @@
 import 'dart:math';
 
 // Função 'functionExample' simples sem parâmetros ou retorno.
-void functionExample() {}
+int functionExample() => 1;
 
 // Função 'functionExampleWithParams' com parâmetros.
 void functionExampleWithParams(int param1, String param2) {}
@@ -25,7 +25,6 @@ void functionExampleWithNamedParams({
 }) {
   // Realiza alguma ação com os parâmetros nomeados (pode ser vazio).
 }
-
 // Função assíncrona 'functionExampleAsync' que retorna um Future<bool>.
 Future<bool> functionExampleAsync() async {
   // Retorna um Future imediatamente com o valor 'true'.
@@ -64,13 +63,13 @@ Stream<int> counter(String name) async* {
 void main() {
   // Executa 3 contadores em uma thread separada.
   final consumer1 = counter('stream1');
-  // final consumer2 = counter('stream2');
-  // final consumer3 = counter('stream3');
+  final consumer2 = counter('stream2');
+  final consumer3 = counter('stream3');
 
   // Escuta todos os streams.
   consumer1.listen((event) {
     print('[consumer1] consumindo $event\n'); // Imprime o valor consumido.
   });
-  // consumer2.listen((event) => print('[consumer2] consumindo $event\n'));
-  // consumer3.listen((event) => print('[consumer3] consumindo $event\n'));
+  consumer2.listen((event) => print('[consumer2] consumindo $event\n'));
+  consumer3.listen((event) => print('[consumer3] consumindo $event\n'));
 }

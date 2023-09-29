@@ -34,15 +34,16 @@ enum EnumExample { value1, value2, value3 }
 // Enum com valores associados
 enum EnumExample2 {
   // É possivel tambem implementar interfaces
-  value1('value1'),
-  value2('value2'),
-  value3('value3');
+  value1('value1', 20),
+  value2('value2', 30),
+  value3('value3', 40);
 
-  final String value;
+  final String name;
+  final int idade;
 
-  const EnumExample2(this.value);
+  const EnumExample2(this.name, this.idade);
 
-  String get eachLetterAsAListElement => value.split('').join(',');
+  String get eachLetterAsAListElement => name.split('').join(',');
 }
 
 void main() {

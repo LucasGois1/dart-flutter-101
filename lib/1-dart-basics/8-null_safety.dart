@@ -5,8 +5,8 @@
 import 'dart:math';
 
 class Person {
-  String name;
-  int age;
+  String? name;
+  int? age;
 
   Person({
     required this.name,
@@ -24,6 +24,9 @@ void main() {
   late int age;
 
   if (Random().nextBool()) {
+    name = 'John';
+    age = 30;
+  } else {
     name = 'John';
     age = 30;
   }
