@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '2-flutter/life_cycle.dart';
+import '2-flutter/basic.dart';
 
 void main() {
   // runApp(const MyAppChild());
@@ -14,5 +14,6 @@ void main() {
 
   // LifeCycle
 
-  runApp(const HomeLifeCycle());
+  // runApp(const HomeLifeCycle());
+  runApp(const HomeBasic());
 }
