@@ -9,9 +9,10 @@ O MaterialApp é um widget que define a estrutura básica de um aplicativo Flutt
 - Widgets de Scaffold: O MaterialApp fornece um ponto de entrada para a criação de Scaffold, que é um widget fundamental para criar a estrutura de uma tela no estilo Material Design, incluindo a barra de aplicativos, o menu de navegação, o corpo da tela e muito mais.
 - Integração com Temas Escuros e Claros: O MaterialApp suporta temas claros e escuros, permitindo que seu aplicativo se ajuste automaticamente às preferências do usuário ou às configurações do sistema.
 - Manuseio de Fontes e Estilos de Texto: O MaterialApp gerencia as configurações de fonte e estilo de texto do aplicativo, garantindo uma aparência consistente em todo o aplicativo.
-- Por que o MaterialApp é usado? 
 
-## O MaterialApp é usado principalmente por duas razões principais:
+## Por que o MaterialApp é usado? 
+
+O MaterialApp é usado principalmente por duas razões principais:
 
 - Adoção das diretrizes do Material Design: Se você deseja criar um aplicativo que siga as diretrizes de design do Material Design, o MaterialApp fornece um ponto de partida fácil e consistente. Ele configura automaticamente muitos aspectos visuais e comportamentais do seu aplicativo para se alinhar com o Material Design.
 - Facilita a configuração do aplicativo: O MaterialApp simplifica muitas tarefas comuns, como a configuração de temas, roteamento e internacionalização, tornando mais fácil para os desenvolvedores criar aplicativos Flutter completos e bem projetados.
