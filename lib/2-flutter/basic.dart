@@ -14,85 +14,85 @@ class _HomeBasicState extends State<HomeBasic>
 
   final List<EmailCard> emails = [
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
     ),
     EmailCard(
-      sentFrom: 'John Doe',
+      author: 'John Doe',
       subject: "New Flutter release",
       body: ""
           "Flutter 3.13 is now available! This release includes the following new features and improvements",
@@ -328,10 +328,10 @@ class NavigationBar extends StatelessWidget {
 class EmailCard extends StatelessWidget {
   EmailCard({
     Key? key,
-    required String sentFrom,
+    required String author,
     required String subject,
     required String body,
-  })  : _sentFrom = sentFrom,
+  })  : _author = author,
         _subject = subject,
         _body = body,
         super(key: key);
@@ -340,7 +340,7 @@ class EmailCard extends StatelessWidget {
     child: Icon(Icons.person),
   );
 
-  final String _sentFrom;
+  final String _author;
   final String _subject;
   final String _body;
   final DateTime _date = DateTime.now();
@@ -369,7 +369,7 @@ class EmailCard extends StatelessWidget {
                     bottom: 8.0,
                   ),
                   child: Text(
-                    _sentFrom,
+                    _author,
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 20,
