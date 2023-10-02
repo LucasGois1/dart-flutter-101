@@ -151,6 +151,8 @@ class _HomeBasicState extends State<HomeBasic>
         primarySwatch: Colors.red,
       ),
       home: SafeArea(
+        top: true,
+        bottom: false,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: const Color.fromRGBO(250, 250, 250, 1),

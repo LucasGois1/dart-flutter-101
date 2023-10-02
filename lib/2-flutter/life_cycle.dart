@@ -29,8 +29,8 @@ class _HomeLifeCycleState extends State<HomeLifeCycle> {
         body: Center(
           child: clear
               ? const Text("Tudo limpo!")
-              : Column(
-                  children: const [
+              : const Column(
+                  children: [
                     First(),
                     Second(),
                   ],
